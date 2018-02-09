@@ -9,7 +9,7 @@
 	</head>
 	<body>
         <div id="container">
-        <div id="navbar">
+        <div id="topnav">
           <ul>
             <li><a href="/Welcome">Home</a></li>
             <li><a href="/Catalog">Catalog</a></li>
