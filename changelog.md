@@ -13,11 +13,15 @@ Michaela Yoon
 
 ## [Unreleased]
 
-## 0.0.3 - 2018-02-09
-Created a basic navbar 
+## 0.0.4 - 2018-02-09
 
-## Added by Alfred
-Updated to default to welcome rather than welcome.message
+##Added by Alfred
+Created and added image to main page
+
+## 0.0.3 - 2018-02-09
+
+##Added by Alfred
+Created a basic navbar 
 
 ## 0.0.2 - 2018-02-09
 
