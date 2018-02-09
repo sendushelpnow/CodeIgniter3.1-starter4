@@ -9,6 +9,12 @@
 	</head>
 	<body>
         <div id="container">
+        <div id="navbar">
+          <ul>
+            <li><a href="/Welcome">Home</a></li>
+            <li><a href="/Catalog">Catalog</a></li>
+          </ul>
+        </div>
 			{content}
 			<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. 
 				{ci_version}</p>
