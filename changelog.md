@@ -13,6 +13,10 @@ Michaela Yoon
 
 ## [Unreleased]
 
+## 0.0.7 - 2018-02-09
+
+## Added by Alfred
+Added change gear form and title with some minor css changes
 
 ## 0.0.6 - 2018-02-09
 
