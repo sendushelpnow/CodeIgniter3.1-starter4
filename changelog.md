@@ -13,7 +13,13 @@ Michaela Yoon
 
 ## [Unreleased]
 
+## 0.0.2 - 2018-02-09
+
+## Added
+Updated to default to welcome rather than welcome.message
+
 ## 0.0.1 - 2018-02-08
+
 ### Added
 Added a changelog to the project
 
