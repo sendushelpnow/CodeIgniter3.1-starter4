@@ -4,11 +4,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Info extends CI_Controller
 {
-
+    var $data;
     function __construct()
 	{
 		parent::__construct();
         $this->load->model('Categories');
+        $this->load->model('Equipment_sets');
+        $this->load->model('Accessories');
 	}
 	/**
      * The index page for this controller.
@@ -21,16 +23,17 @@ class Info extends CI_Controller
 		// $this->render(); 
         header("Content-type: application/json");
         echo json_encode("{scenario: medieval}");
-        $this->Categories->all();
+        // echo json_encode($this->Categories->all());
 	}
+
 
     /**
      *
      *
      *
      */
-    public function category($key) {
-
+    public function category() {
+        $this->Categories->all();
     }
     
     /**
@@ -38,8 +41,8 @@ class Info extends CI_Controller
      *
      *
      */
-    public function catalog($key) {
-
+    public function catalog() {
+        $this->Accessories->all();
     }
 
     /**
@@ -47,7 +50,7 @@ class Info extends CI_Controller
      *
      *
      */
-    public function bundle($key) {
-
+    public function bundle() {
+        $this->Equipment_sets->all();
     }
 }

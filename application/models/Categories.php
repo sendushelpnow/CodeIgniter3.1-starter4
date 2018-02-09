@@ -30,20 +30,17 @@ class Categories extends CI_Model
         $row = 1;
         if (($handle = fopen("csv/Categories.csv", "r")) !== FALSE) {
             while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
-                // $num = count($data);
-                // echo "<p> $num fields in line $row: <br /></p>\n";
-                // $row++;
-                // for ($c=0; $c < $num; $c++) {
-                //     echo $data[$c] . "<br />\n";
-                // }
-                $categories[] = $data;
+                $num = count($data);
+                echo "<p> $num fields in line $row: <br /></p>\n";
+                $row++;
+                for ($c=0; $c < $num; $c++) {
+                    echo $data[$c] . "<br />\n";
+                }
+                // $categories[] = $data;
             }
             fclose($handle);
         }
-        // $file = fopen("test.txt", "w");
-        // echo fwrite($file,"Hello World. Testing!");
-        // fclose($file);
-		return $this->data;
+		return $this->categories;
 	}
 
 }

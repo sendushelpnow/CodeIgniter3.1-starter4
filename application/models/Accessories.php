@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  *
  * @author clai
  */
-class Equipment_sets extends CI_Model
+class Accessories extends CI_Model
 {
     var $categories = array();
 
