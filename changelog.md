@@ -13,6 +13,15 @@ Michaela Yoon
 
 ## [Unreleased]
 
+## 0.0.5 - 2018-02-09
+
+## Added by Calvin
+added CSV files to project
+created the accesory, equipment set, and category models
+  some functionality
+created info controller
+  some functionality
+  
 ## 0.0.4 - 2018-02-09
 
 ##Added by Alfred
