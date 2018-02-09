@@ -13,6 +13,12 @@ Michaela Yoon
 
 ## [Unreleased]
 
+
+## 0.0.6 - 2018-02-09
+
+## Added by Alfred
+update the css center image and beautify navbar
+
 ## 0.0.5 - 2018-02-09
 
 ## Added by Calvin
