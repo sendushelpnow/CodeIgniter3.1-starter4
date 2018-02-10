@@ -20,7 +20,8 @@ Release Date: February 9, 2018
 - JavaScript: welcome.js (for changing stickman's image)
 
 ### Modified by Jeremy
-- Welcome.php view: modified to change the stickman image by the selected equipment set
+- welcome.php view: modified to change the stickman image by the selected equipment set
+- welcome.php view: modified to show a default equipment set (mage set for now)
 - Welcome.php controller: modified to call welcome.js
 
 ## 0.0.8 - 2018-02-09
