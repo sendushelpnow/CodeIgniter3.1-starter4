@@ -11,6 +11,13 @@ Group Members:
 [MATE #3] Michaela Yoon
 
 ## 0.0.10 - 2018-02-10
+
+### Added by Michaela
+- Assets: man_mage.png, man_warrior.png (edited versions with accessories)
+
+### Modified by Michaela
+- welcome.js to show .png extensions instead of .svg
+
 ### Modified by Calvin
 - Info.php controller: modified to display data in json format based on specified key or all if no key specified
   function catalog($key) to catalog($key = null)
