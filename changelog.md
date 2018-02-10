@@ -10,6 +10,13 @@ Group Members:
 [MATE #2] Jeremy Lee
 [MATE #3] Michaela Yoon
 
+## 0.0.10 - 2018-02-10
+### Modified by Calvin
+- Info.php controller: modified to display data in json format based on specified key or all if no key specified
+  function catalog($key) to catalog($key = null)
+  function category($key) to category($key = null)
+  function bundle($key) to bundle($key = null)
+
 ## *Version 0.0.9*
 
 Release Date: February 9, 2018
