@@ -16,12 +16,14 @@ class Welcome extends Application {
     }
 
     public function index() {
+        echo "<script src=\"\assets\js\welcome.js\"></script>";
+
         $this->data['pagebody'] = 'welcome';
 
         // build the list of accessories, to pass on to our view
-        $source = $this->accessories->all();
+        $source = $this->equipment_sets->all();
         // pass on the data to present, as the "authors" view parameter
-        $this->data['accessories'] = $source;
+        $this->data['equipment_sets'] = $source;
 
         $this->render();
     }
