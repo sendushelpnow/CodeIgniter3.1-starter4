@@ -10,9 +10,18 @@ Group Members:
 [MATE #2] Jeremy Lee
 [MATE #3] Michaela Yoon
 
-## *Version 0.0.8*
+## *Version 0.0.9*
 
 Release Date: February 9, 2018
+
+## 0.0.9 - 2018-02-09
+### Added by Jeremy
+- Assets: man_mage.svg, man_warrior.svg
+- JavaScript: welcome.js (for changing stickman's image)
+
+### Modified by Jeremy
+- Welcome.php view: modified to change the stickman image by the selected equipment set
+- Welcome.php controller: modified to call welcome.js
 
 ## 0.0.8 - 2018-02-09
 ### Added by Jeremy

@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 /**
  *
- * @author clai
+ * @author clai, Jeremy Lee
  */
 class Categories extends CI_Model {
 
