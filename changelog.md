@@ -10,11 +10,11 @@ Group Members:
 [MATE #2] Jeremy Lee
 [MATE #3] Michaela Yoon
 
-## *Version 0.0.7*
+## *Version 0.0.8*
 
 Release Date: February 9, 2018
 
-## 0.0.7 - 2018-02-09
+## 0.0.8 - 2018-02-09
 ### Added by Jeremy
 - Assets: added accessory images into public/assets/img
 
@@ -34,6 +34,11 @@ Release Date: February 9, 2018
   function delete($key1, $key2) to function delete($key1, $key2 = null),
   function delete($key1, $key2) to function delete($key1, $key2 = null),
   function exists($key1, $key2) to function exists($key1, $key2 = null)
+- Resolved merging issue (0.0.7 -> 0.0.8)
+
+## 0.0.7 - 2018-02-09
+### Added by Alfred
+- Added change gear form and title with some minor css changes
 
 ## 0.0.6 - 2018-02-09
 ### Added by Alfred
