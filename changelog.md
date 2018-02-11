@@ -10,6 +10,14 @@ Group Members:
 [MATE #2] Jeremy Lee
 [MATE #3] Michaela Yoon
 
+## 0.0.11 - 2018-02-10
+### Added by Michaela
+- _cell.php to show information of each accessory
+
+### Modified by Michaela
+- Catalog.php controller modified to display accessories (in grid layout)
+- equipment.php view to show the table made up of cells.
+
 ## 0.0.10 - 2018-02-10
 
 ### Added by Michaela
