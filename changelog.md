@@ -10,6 +10,15 @@ Group Members:
 [MATE #2] Jeremy Lee
 [MATE #3] Michaela Yoon
 
+## 0.0.12 - 2018-02-11
+### Modified by Calvin
+- renamed filenames to display properly on deployment server
+  man_warrior.png => man_Warrior.png
+  man_mage.png => man_Mage.png
+  2.PNG => 2.png
+  4.PNG => 4.png
+  5.PNG => 5.png
+  
 ## 0.0.11 - 2018-02-10
 ### Added by Michaela
 - _cell.php to show information of each accessory
