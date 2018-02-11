@@ -23,16 +23,29 @@ class Catalog extends Application {
      *   
      */
     public function index() {
-       		// this is the view we want shown
-		$this->data['pagebody'] = 'equipment';
+        // this is the view we want shown
 
-		// build the list of authors, to pass on to our view
-		$source = $this->Accessories->all();
 
-		// pass on the data to present, as the "authors" view parameter
-		$this->data['authors'] = $source;
+        // build the list of authors, to pass on to our view
+        $pix = $this->Accessories->all();
 
-		$this->render();
+        foreach ($pix as $picture) {
+            $cells[] = $this->parser->parse('_cell', (array) $picture, true);
+        }
+        $this->load->library('table');
+        $parms = array(
+            'table_open' => '<table class = "gallery">',
+            'cell_start' => '<td class = "oneimage">',
+            'cell_alt_start' => '<td class = "oneimage">'
+        );
+        $this->table->set_template($parms);
+
+        $rows = $this->table->make_columns($cells,2);           
+        $this->data['thetable'] = $this->table->generate($rows);
+
+        $this->data['pagebody'] = 'equipment';
+
+            $this->render();
     }
 
     /**
