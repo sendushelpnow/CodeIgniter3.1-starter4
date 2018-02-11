@@ -10,6 +10,11 @@ Group Members:
 [MATE #2] Jeremy Lee
 [MATE #3] Michaela Yoon
 
+## 0.0.11 - 2018-02-10
+
+### Modified by Michaela
+- Catalog.php controller modified to display accessories
+
 ## 0.0.10 - 2018-02-10
 
 ### Added by Michaela

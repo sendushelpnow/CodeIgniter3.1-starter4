@@ -1,33 +1,82 @@
 <?php
+
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Catalog extends CI_Controller
-{
+/**
+ * 
+ * @author Michaela Yoon
+ */
+class Catalog extends Application {
 
-	function __construct()
-	{
-		parent::__construct();
-	}
+    var $data;
 
-	/**
-	 * Catalog page for our app
-	 */
-	public function index()
-	{
-		// this is the view we want shown
+    function __construct() {
+        parent::__construct();
+        $this->load->model('Categories');
+        $this->load->model('Equipment_sets');
+        $this->load->model('Accessories');
+    }
+
+    /**
+     * The index page for this controller.
+     * Displays the scenario in JSON format.
+     *   
+     */
+    public function index() {
+       		// this is the view we want shown
 		$this->data['pagebody'] = 'equipment';
 
 		// build the list of authors, to pass on to our view
 		$source = $this->Accessories->all();
-                
-                $source = $this->Categories->all();
-                
-                $source = $this->Equipment_sets->all();
 
 		// pass on the data to present, as the "authors" view parameter
 		$this->data['authors'] = $source;
 
 		$this->render();
-	}
+    }
 
+    /**
+     * Displays the categories in JSON format.
+     * Displays all entries if none specified.
+     */
+    public function category($key = null) {
+        $data = $this->Categories->all();
+        if ($key != null) {
+            echo json_encode($data[$key]);
+        } else {
+            foreach ($data as $row) {
+                echo json_encode($row);
+            }
+        }
+    }
+
+    /**
+     * Displays the accessories in JSON format.
+     * Displays all entries if none specified.
+     */
+    public function catalog($key = null) {
+        $data = $this->Accessories->all();
+        if ($key != null) {
+            echo json_encode($data[$key]);
+        } else {
+            foreach ($data as $row) {
+                echo json_encode($row);
+            }
+        }
+    }
+
+    /**
+     * Displays the equipment sets in JSON format.
+     * Displays all entries if none specified.
+     */
+    public function bundle($key = null) {
+        $data = $this->Equipment_sets->all();
+        if ($key != null) {
+            echo json_encode($data[$key]);
+        } else {
+            foreach ($data as $row) {
+                echo json_encode($row);
+            }
+        }
+    }
 }
