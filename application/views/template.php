@@ -13,6 +13,14 @@
           <ul>
             <li><a href="/Welcome">Home</a></li>
             <li><a href="/Catalog">Catalog</a></li>
+            <li id="roles"><form action="">
+                <select name="roles">
+                <option value="guest">Guest</option>
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+                </select>
+                </form>
+            </li>
           </ul>
         </div>
 			{content}
