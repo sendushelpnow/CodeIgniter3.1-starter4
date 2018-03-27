@@ -12,11 +12,12 @@ Group Members:
 
 ## 0.0.13 - 2018-03-27
 ### Added by Michaela
-- application/controllers/Customization.php
+- application/controllers/Customization.php - section for mix/match accessories
+- application/controllers/Roles.php - controller for roles
 
 ### Modified by Michaela
-- application/config/constants.php added constants for user roles (guest, user, admin)
-- application/views/template.php shows section linking to customization
+- application/config/constants.php - added constants for user roles (guest, user, admin)
+- application/views/template.php - shows section linking to customization, edited role section to link to Role controller
 
 
 ## 0.0.12 - 2018-02-11
