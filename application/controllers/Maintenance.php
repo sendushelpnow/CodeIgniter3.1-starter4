@@ -5,11 +5,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+/**
+ * 
+ * @author Calvin Lai
+ */
 class Maintenance extends Application {
 
     function __construct() {
         parent::__construct();
+        $this->load->model('Categories');
+        $this->load->model('Equipment_sets');
+        $this->load->model('Accessories');
     }
 
     public function index() {
@@ -17,17 +23,8 @@ class Maintenance extends Application {
             redirect($_SERVER['HTTP_REFERER']); 
             debug_to_console($this->session->userrole);
         }
-        $this->data['pagebody'] = 'welcome';
-        
-        // $this->$render();
+        $currEquip = $this->accessories->all(); // get all the tasks
+        // $this->show_page($currEquip);        
     }
     
-}
-
-function debug_to_console( $data ) {
-    $output = $data;
-    if ( is_array( $output ) )
-        $output = implode( ',', $output);
-
-    echo "<script>console.log( 'Debug Objects: " . $output . "' );</script>";
 }
