@@ -11,7 +11,7 @@
 	<body>
         <div id="container">
         <div id="topnav">
-          <ul>
+          <ul class="nav nav-pills">
             <li><a href="/Welcome">Home</a></li>
             <li><a href="/Catalog">Catalog</a></li>
             <li><a href="/Customization">Customization</a></li>
