@@ -92,3 +92,8 @@ ul {
   display: block;
   margin: auto;
 }
+
+#roles {
+  float: right;
+  padding-right: 5px;
+}

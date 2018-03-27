@@ -13,7 +13,11 @@
           <ul>
             <li><a href="/Welcome">Home</a></li>
             <li><a href="/Catalog">Catalog</a></li>
-            <li><a href="/Role">Role</a></li>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li><a href="/roles/actor/Guest">Guest</a></li>
+                        <li><a href="/roles/actor/User">User</a></li>
+                        <li><a href="/roles/actor/Admin">Admin</a></li>
+            </ul>
           </ul>
         </div>
 			{content}
