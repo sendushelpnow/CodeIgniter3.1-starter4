@@ -13,6 +13,7 @@
           <ul>
             <li><a href="/Welcome">Home</a></li>
             <li><a href="/Catalog">Catalog</a></li>
+            <li><a href="/Customization">Customization</a></li>
             <li id="roles"><form action="">
                 <select name="roles">
                 <option value="guest">Guest</option>
