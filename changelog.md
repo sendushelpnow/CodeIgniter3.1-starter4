@@ -10,6 +10,12 @@ Group Members:
 [MATE #2] Jeremy Lee
 [MATE #3] Michaela Yoon
 
+## 0.0.16 - 2018-03-27
+
+### Added by Calvin
+- controllers/maintenance, blank for now, needs view and functionality
+- controllers/role, sets the current session role to the selected role
+
 ## 0.0.15 - 2018-03-27
 ### Added by Michaela
 - application/controllers/Customization.php - section for mix/match accessories
