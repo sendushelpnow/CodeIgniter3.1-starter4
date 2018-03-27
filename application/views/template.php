@@ -13,6 +13,7 @@
           <ul>
             <li><a href="/Welcome">Home</a></li>
             <li><a href="/Catalog">Catalog</a></li>
+            <li><a href="/Role">Role</a></li>
           </ul>
         </div>
 			{content}
