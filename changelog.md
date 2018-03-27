@@ -10,6 +10,13 @@ Group Members:
 [MATE #2] Jeremy Lee
 [MATE #3] Michaela Yoon
 
+## 0.0.13 - 2018-03-27
+
+### Added by Calvin
+- controllers/maintenance, blank for now, needs view and functionality
+- controllers/role, sets the current session role to the selected role
+
+
 ## 0.0.12 - 2018-02-11
 ### Modified by Calvin
 - renamed filenames to display properly on deployment server
