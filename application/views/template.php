@@ -13,14 +13,15 @@
           <ul>
             <li><a href="/Welcome">Home</a></li>
             <li><a href="/Catalog">Catalog</a></li>
-            <li id="roles"><form action="">
-                <select name="roles">
-                <option value="guest">Guest</option>
-                <option value="user">User</option>
-                <option value="admin">Admin</option>
-                </select>
-                </form>
-            </li>
+            <li><a href="/Customization">Customization</a></li>
+            <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">User Role<b class="caret"></b></a>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                  <li><a href="/roles/actor/Guest">Guest</a></li>
+                  <li><a href="/roles/actor/User">User</a></li>
+                  <li><a href="/roles/actor/Admin">Admin</a></li>
+      </ul>
+    </li>
           </ul>
         </div>
 			{content}
