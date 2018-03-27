@@ -10,6 +10,14 @@ Group Members:
 [MATE #2] Jeremy Lee
 [MATE #3] Michaela Yoon
 
+## 0.0.17 - 2018-03-27
+### Added by Calvin
+- assets/css/ a bunch of necessary css files added
+- assets/js/ javascript file necessary for the drop down menu
+
+### Modified by Calvin
+- application/views/template.php added a classname to a ul element
+
 ## 0.0.16 - 2018-03-27
 
 ### Added by Calvin
