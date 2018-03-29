@@ -10,6 +10,17 @@ Group Members:
 [MATE #2] Jeremy Lee
 [MATE #3] Michaela Yoon
 
+## 0.0.18 - 2018-03-29
+### Added by Calvin
+- views/add_set.php, form for adding new sets
+- views/set_edit.php, editable set entry
+- views/set_nonedit.php, non editable set entry
+- views/settable.php, table for equipment sets
+
+### Modified by Calvin
+- controllers/Maintenance.php, added add and edit functions
+- views/oneitemnoteditable.php, slight changes
+
 ## 0.0.17 - 2018-03-27
 ### Added by Calvin
 - assets/css/ a bunch of necessary css files added
