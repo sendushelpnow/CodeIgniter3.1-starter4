@@ -10,6 +10,16 @@ Group Members:
 [MATE #2] Jeremy Lee
 [MATE #3] Michaela Yoon
 
+## 0.0.21 - 2018-03-30
+### Added by Calvin
+- views/modify.php, allows user to change values of items
+
+### Modified by Calvin
+- controllers/Maintenance.php, fixing up edit function
+- views/itemlist.php, updated to match requirements
+- views/oneitemeditable.php, updated for editing values
+- views/oneitemnoteditable.php, updated to match requirements
+
 ## 0.0.20 - 2018-03-29
 ### Added by Alfred
 - views/catalog.php, displays all items sorted by category with stats

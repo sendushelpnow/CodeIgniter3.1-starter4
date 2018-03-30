@@ -21,61 +21,74 @@ class Maintenance extends Application {
     }
 
     public function index() {
-        $currEquip = $this->equipment_sets->all(); // get all the accessories
-        $this->show_page($currEquip);        
+        $allAccessories = $this->accessories->all(); // get all the accessories
+        $this->show_page($allAccessories);        
     }
     
-        // Show a single page of equipment
-    private function show_page($equipments) {
+        // Show a single page of accessories
+    private function show_page($accessories) {
         $role = $this->session->userdata('userrole');
-        $this->data['pagetitle'] = 'Customize your own set (' . $role . ')';
+        $this->data['pagetitle'] = 'Customize items (' . $role . ')';
         // build the task presentation output
         $result = ''; // start with an empty array      
-        foreach ($equipments as $equipment) {
-            if (!empty($equipment->status))
-                $equipment->status = $this->app->status($equipment->status);
+        foreach ($accessories as $accessory) {
+            if (!empty($accessory->status))
+                $accessory->status = $this->app->status($accessory->status);
             if ($role == ROLE_ADMIN)
-                $result .= $this->parser->parse('set_edit', (array) $equipment, true);
+                $result .= $this->parser->parse('oneitemeditable', (array) $accessory, true);
             else
-                $result .= $this->parser->parse('set_noedit', (array) $equipment, true);
+                $result .= $this->parser->parse('oneitemnoteditable', (array) $accessory, true);
         }
-        $this->data['display_sets'] = $result;
+        $this->data['display_accessories'] = $result;
 
         // and then pass them on
-        $this->data['pagebody'] = 'settable';
+        $this->data['pagebody'] = 'itemlist';
         $this->render();
     }
 
     public function edit($id = null) {
+        $count = 0;
         if ($id == null)
             redirect('/maintenance');
-        $equipment_set = $this->equipment_sets->get($id);
-        $this->session->set_userdata('equipment_set', $equipment_set);
-        $this->showit();
-    }
+        $accessory = $this->accessories->get($id);
+        $this->session->set_userdata('accessory', $accessory);
+        $allAccessories = $this->accessories->all();
+        $this->show_page($allAccessories);
+        $result = ''; // start with an empty array      
+        foreach ($allAccessories as $accessory) {
+            if (!empty($accessory->status))
+                $accessory->status = $this->app->status($accessory->status);
+            if ($count == $id) {
+                $result .= $this->parser->parse('modify', (array) $accessory, true);
+            } else {
+                $result .= $this->parser->parse('oneitemeditable', (array) $accessory, true);
+            }
+            $count++;
+        }
+        $this->data['display_accessories'] = $result;
 
-    public function show_add() {
-        $this->data['add_set'] = 'settable';
+        // and then pass them on
+        $this->data['pagebody'] = 'itemlist';
         $this->render();
-        // $this->showit();
     }
 
     // Render the current 
     private function showit() {
         $this->load->helper('form');
-        $equipment_set = $this->session->userdata('equipment_set');
-        // $this->data['id'] = $equipment_set->id;
+        $accessory = $this->session->userdata('accessory');
+        $this->data['equipmentId'] = $accessory->equipmentId;
 
         // if no errors, pass an empty message
         if (!isset($this->data['error']))
             $this->data['error'] = '';
 
         $fields = array(
-            'ftask' => form_label('Task description') . form_input('task', $task->task),
-            'fpriority' => form_label('Priority') . form_dropdown('priority', $this->app->priority(), $task->priority),
-            'fsize' => form_label('Size') . form_dropdown('size', $this->app->size(), $task->size),
-            'fgroup' => form_label('Group') . form_dropdown('group', $this->app->group(), $task->group),
-            'fstatus' => form_label('Status') . form_dropdown('status', $this->app->status(), $task->status),
+            'equipmentId' => form_label('equipmentId') . form_input('equipmentId', $accessory->equipmentId),
+            'name' => form_label('SetName') . form_dropdown('setName', $this->app->name(), $accessory->name),
+            'headwear' => form_label('Headwear') . form_dropdown('Headwear', $this->app->headwear(), $accessory->headwear),
+            'armor' => form_label('Armor') . form_dropdown('Armor', $this->app->armor(), $accessory->armor),
+            'weapon' => form_label('Weapon') . form_dropdown('Weapon', $this->app->weapon(), $accessory->weapon),
+            'footwear' =>form_label('Footwear') . form_dropdown('Footwear', $this->app->footwear(), $accessory->footwear),
             'zsubmit' => form_submit('submit', 'Update the TODO task'),
         );
         $this->data = array_merge($this->data, $fields);
