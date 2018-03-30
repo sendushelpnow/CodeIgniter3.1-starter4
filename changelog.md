@@ -10,15 +10,59 @@ Group Members:
 [MATE #2] Jeremy Lee
 [MATE #3] Michaela Yoon
 
-## *Version 0.0.13*
+## *Version 0.0.19*
 
 Release Date: March 29
 
-## 0.0.13 - 2018-03-29
+## 0.0.19 - 2018-03-29
 ### Added by Jeremy
 - [Model] applications/models/Accessory.php: extends Entity
 - [Model] applications/models/Category.php: extends Entity
 - [Model] applications/models/Equipment_set.php: extends Entity
+
+## 0.0.18 - 2018-03-29
+### Added by Calvin
+- views/add_set.php, form for adding new sets
+- views/set_edit.php, editable set entry
+- views/set_nonedit.php, non editable set entry
+- views/settable.php, table for equipment sets
+
+### Modified by Calvin
+- controllers/Maintenance.php, added add and edit functions
+- views/oneitemnoteditable.php, slight changes
+
+## 0.0.17 - 2018-03-27
+### Added by Calvin
+- assets/css/ a bunch of necessary css files added
+- assets/js/ javascript file necessary for the drop down menu
+
+### Modified by Calvin
+- application/views/template.php added a classname to a ul element
+
+## 0.0.16 - 2018-03-27
+
+### Added by Calvin
+- controllers/maintenance, blank for now, needs view and functionality
+- controllers/role, sets the current session role to the selected role
+
+## 0.0.15 - 2018-03-27
+### Added by Michaela
+- application/controllers/Customization.php - section for mix/match accessories
+- application/controllers/Roles.php - controller for roles
+
+### Modified by Michaela
+- application/config/constants.php - added constants for user roles (guest, user, admin)
+- application/views/template.php - shows section linking to customization, edited role section to link to Role controller
+
+## 0.0.14 - 2018-02-11
+### Modified by Alfred Swinton
+- added .travis.yml to project root
+
+## 0.0.13 - 2018-02-11
+### Modified by Alfred Swinton
+- added dropdown for role to view with css
+changed Template.php
+changed default.css
 
 ## 0.0.12 - 2018-02-11
 ### Modified by Calvin
