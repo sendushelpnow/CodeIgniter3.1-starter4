@@ -10,10 +10,16 @@ Group Members:
 [MATE #2] Jeremy Lee
 [MATE #3] Michaela Yoon
 
-## 0.0.19 - 2018-03-29
+## 0.0.20 - 2018-03-29
 ### Added by Alfred
 - views/catalog.php, displays all items sorted by category with stats
 - controllers/Catalog.php builds up the required tables and elements for catalog view
+
+## 0.0.19 - 2018-03-29
+### Added by Jeremy
+- [Model] applications/models/Accessory.php: extends Entity
+- [Model] applications/models/Category.php: extends Entity
+- [Model] applications/models/Equipment_set.php: extends Entity
 
 ## 0.0.18 - 2018-03-29
 ### Added by Calvin
