@@ -10,9 +10,10 @@ Group Members:
 [MATE #2] Jeremy Lee
 [MATE #3] Michaela Yoon
 
-## *Version 0.0.19*
-
-Release Date: March 29
+## 0.0.20 - 2018-03-29
+### Added by Alfred
+- views/catalog.php, displays all items sorted by category with stats
+- controllers/Catalog.php builds up the required tables and elements for catalog view
 
 ## 0.0.19 - 2018-03-29
 ### Added by Jeremy

@@ -2,10 +2,6 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-/**
- * 
- * @author Michaela Yoon
- */
 class Catalog extends Application {
 
     var $data;
@@ -17,16 +13,8 @@ class Catalog extends Application {
         $this->load->model('Accessories');
     }
 
-    /**
-     * The index page for this controller.
-     * Displays the scenario in JSON format.
-     *   
-     */
     public function index() {
-        // this is the view we want shown
-
-
-        // build the list of authors, to pass on to our view
+      /*
         $pix = $this->Accessories->all();
 
         foreach ($pix as $picture) {
@@ -48,10 +36,6 @@ class Catalog extends Application {
             $this->render();
     }
 
-    /**
-     * Displays the categories in JSON format.
-     * Displays all entries if none specified.
-     */
     public function category($key = null) {
         $data = $this->Categories->all();
         if ($key != null) {
@@ -63,10 +47,6 @@ class Catalog extends Application {
         }
     }
 
-    /**
-     * Displays the accessories in JSON format.
-     * Displays all entries if none specified.
-     */
     public function catalog($key = null) {
         $data = $this->Accessories->all();
         if ($key != null) {
@@ -78,10 +58,6 @@ class Catalog extends Application {
         }
     }
 
-    /**
-     * Displays the equipment sets in JSON format.
-     * Displays all entries if none specified.
-     */
     public function bundle($key = null) {
         $data = $this->Equipment_sets->all();
         if ($key != null) {
@@ -90,6 +66,97 @@ class Catalog extends Application {
             foreach ($data as $row) {
                 echo json_encode($row);
             }
+        }*/
+      $this->load->library('table');
+      $Items = $this->Accessories->all();
+      
+      $ImageSt = '<img src="/assets/img/';
+      $ImageEn = '.png" />';
+      
+      // Generate Table for All Weapons
+      $this->table->set_heading(array('ID','Name','Mobility','Range','Power','Protection','Image'));
+      
+      foreach ($Items as $Item)
+      {
+        if ($Item['Category'] == 'Weapon')
+        {
+          $this->table->add_row($Item['EquipmentID']
+            ,$Item['Name']
+            ,$Item['Mobility']
+            ,$Item['Range']
+            ,$Item['Power']
+            ,$Item['Protection']
+            ,$ImageSt . $Item['EquipmentID'] . $ImageEn);
         }
+      }
+
+      $weapons = $this->table->generate();
+      
+      $this->table->clear();
+
+      // Generate Table for All Headgear
+      $this->table->set_heading(array('ID','Name','Mobility','Range','Power','Protection','Image'));
+      
+      foreach ($Items as $Item)
+      {
+        if ($Item['Category'] == 'Headwear')
+        {
+          $this->table->add_row($Item['EquipmentID']
+            ,$Item['Name']
+            ,$Item['Mobility']
+            ,$Item['Range']
+            ,$Item['Power']
+            ,$Item['Protection']
+            ,$ImageSt . $Item['EquipmentID'] . $ImageEn);
+        }
+      }
+
+      $headgear = $this->table->generate();
+      $this->table->clear();
+
+      // Generate Table for All Armor
+      $this->table->set_heading(array('ID','Name','Mobility','Range','Power','Protection','Image'));
+      
+      foreach ($Items as $Item)
+      {
+        if ($Item['Category'] == 'Armor')
+        {
+          $this->table->add_row($Item['EquipmentID']
+            ,$Item['Name']
+            ,$Item['Mobility']
+            ,$Item['Range']
+            ,$Item['Power']
+            ,$Item['Protection']
+            ,$ImageSt . $Item['EquipmentID'] . $ImageEn);
+        }
+      }
+
+      $armor = $this->table->generate();
+      $this->table->clear();
+
+      $this->table->set_heading(array('ID','Name','Mobility','Range','Power','Protection','Image'));
+      
+      foreach ($Items as $Item)
+      {
+        if ($Item['Category'] == 'Boots')
+        {
+          $this->table->add_row($Item['EquipmentID']
+            ,$Item['Name']
+            ,$Item['Mobility']
+            ,$Item['Range']
+            ,$Item['Power']
+            ,$Item['Protection']
+            ,$ImageSt . $Item['EquipmentID'] . $ImageEn);
+        }
+      }
+
+      $boots = $this->table->generate();
+
+      $this->data['pagebody'] = 'catalog';
+      $this->data['tableweapons'] = $weapons;
+      $this->data['tablehead'] = $headgear;
+      $this->data['tablearmor'] = $armor;
+      $this->data['tableboots'] = $boots;
+      $this->render();      
     }
 }
