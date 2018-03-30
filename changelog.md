@@ -10,6 +10,16 @@ Group Members:
 [MATE #2] Jeremy Lee
 [MATE #3] Michaela Yoon
 
+## *Version 0.0.13*
+
+Release Date: March 29
+
+## 0.0.13 - 2018-03-29
+### Added by Jeremy
+- [Model] applications/models/Accessory.php: extends Entity
+- [Model] applications/models/Category.php: extends Entity
+- [Model] applications/models/Equipment_set.php: extends Entity
+
 ## 0.0.12 - 2018-02-11
 ### Modified by Calvin
 - renamed filenames to display properly on deployment server
