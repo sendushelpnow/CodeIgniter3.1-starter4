@@ -10,6 +10,16 @@ Group Members:
 [MATE #2] Jeremy Lee
 [MATE #3] Michaela Yoon
 
+## *Version 0.0.19*
+
+Release Date: March 29
+
+## 0.0.19 - 2018-03-29
+### Added by Jeremy
+- [Model] applications/models/Accessory.php: extends Entity
+- [Model] applications/models/Category.php: extends Entity
+- [Model] applications/models/Equipment_set.php: extends Entity
+
 ## 0.0.18 - 2018-03-29
 ### Added by Calvin
 - views/add_set.php, form for adding new sets
