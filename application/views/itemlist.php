@@ -1,10 +1,14 @@
-<h3>Currently Equipped</h3>
+<h3>Accessories</h3>
 <table class="table">
     <tr>
-        <th>Category</th>
-        <th>Equipment ID</th>
-        <th>Name</th>
+        <td>Equipment ID</td>
+        <td>Category</td>
+        <td>Name</td>
+        <td>Mobility</td>
+        <td>Range</td>
+        <td>Power</td>
+        <td>Protection</td>
     </tr>
-    {display_tasks}  
+    {display_accessories}  
 </table>
 

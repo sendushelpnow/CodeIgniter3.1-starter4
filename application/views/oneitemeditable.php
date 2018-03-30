@@ -1,6 +1,10 @@
 <tr>
     <!-- MODIFY the next line -->
+    <td><a href="/maintenance/edit/{EquipmentID}"><input type="button" value="{EquipmentID}"/></a></td>
     <td>{Category}</td>
-    <td><a href="/customization/edit/{id}"><input type="button" value="{EquipmentID}"/></a></td>
     <td>{Name}</td>
+    <td>{Mobility}</td>
+    <td>{Range}</td>
+    <td>{Power}</td>
+    <td>{Protection}</td>
 </tr>
