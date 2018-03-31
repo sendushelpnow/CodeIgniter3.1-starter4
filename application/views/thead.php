@@ -1,0 +1,9 @@
+<tr>
+  <th>ID</th>
+  <th>Name</th>
+  <th>Mobility</th>
+  <th>Range</th>
+  <th>Power</th>
+  <th>Protection</th>
+  <th>Image</th>
+</tr>
