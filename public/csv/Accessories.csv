@@ -1,9 +1,9 @@
 EquipmentID,Name,Category,Mobility,Range,Power,Protection
 0,Sword,Weapon,0,10,20,0
 1,Wand,Weapon,0,40,30,0
-2,Mage's Hat,Headwear,0,0,10,5
+2,Mage Hat,Headwear,0,0,10,5
 3,Light Helm,Headwear,5,0,0,15
 4,Light Armor,Armor,20,0,0,20
-5,Mage's Robe,Armor,30,0,10,0
-6,Mage's Shoes,Boots,30,0,10,0
+5,Mage Robe,Armor,30,0,10,0
+6,Mage Shoes,Boots,30,0,10,0
 7,Light Boots,Boots,20,0,0,5

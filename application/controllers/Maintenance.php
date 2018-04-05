@@ -7,6 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 /**
  * 
  * @author Calvin Lai
@@ -97,5 +98,12 @@ class Maintenance extends Application {
         $this->render();
     }
     
+    private function submit($id, $category, $name, $mobility, $range, $power, $protection) {
+        $csvPath = "csv/Accessories.csv";
+        $entry = $id . "," . $categoty . "," . $name . "," . $mobility . "," . $range . "," . $power . "," . $protection;
+        $file = fopen(csvPath, "a+");
+        fputcsv($file, explode(",", $entry));
+        fclose($file);
+    }
 
 }

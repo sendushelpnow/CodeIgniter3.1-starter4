@@ -10,6 +10,14 @@ Group Members:
 [MATE #2] Jeremy Lee
 [MATE #3] Michaela Yoon
 
+## 0.0.22 - 2018-04-04
+### Modified by Calvin
+- controllers/Maintenance.php, finished up submit functionality, small bug remains to be fixed
+- models/Accessories.php, minor change
+- views/modify.php, all attributes now modifiable
+- assets/js/modify.js, added routing to maintenance
+- csv/Accessories.csv, updates when submit button pressed
+
 ## 0.0.21 - 2018-03-30
 ### Added by Alfred
 - views/thead.php. table header portion added to be called by controller 
