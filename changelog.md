@@ -11,6 +11,14 @@ Group Members:
 [MATE #3] Michaela Yoon
 
 ## 0.0.21 - 2018-03-30
+### Added by Alfred
+- views/thead.php. table header portion added to be called by controller 
+
+### Modified by Aps
+- views/catalog.php, changed strategy to better follow golden rules 
+- controllers/Catalog.php, changed strategy to better follow golden rules
+
+## 0.0.21 - 2018-03-30
 ### Added by Calvin
 - views/modify.php, allows user to change values of items
 
