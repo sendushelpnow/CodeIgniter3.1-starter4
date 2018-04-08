@@ -98,12 +98,20 @@ class Maintenance extends Application {
         $this->render();
     }
     
-    private function submit($id, $category, $name, $mobility, $range, $power, $protection) {
+    public function submit($id, $category, $name, $mobility, $range, $power, $protection) {
         $csvPath = "csv/Accessories.csv";
-        $entry = $id . "," . $categoty . "," . $name . "," . $mobility . "," . $range . "," . $power . "," . $protection;
-        $file = fopen(csvPath, "a+");
+        // $id = 0;
+        // $category = "Weapon";
+        // $name = "Sword";
+        // $mobility = 10;
+        // $range = 15;
+        // $power = 15;
+        // $protection = 15;
+        // $entry = $id . "," . $category . "," . $name . "," . $mobility . "," . $range . "," . $power . "," . $protection;
+        $file = fopen($csvPath, "a+");
         fputcsv($file, explode(",", $entry));
         fclose($file);
+        redirect('/maintenance/edit/' . $id);
     }
 
 }
