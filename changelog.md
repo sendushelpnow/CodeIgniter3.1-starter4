@@ -10,6 +10,12 @@ Group Members:
 [MATE #2] Jeremy Lee
 [MATE #3] Michaela Yoon
 
+
+## 0.0.23 - 2018-04-07
+### Modified by Alfred
+- added phpunit testing framework to project
+- did some minor css fixes
+
 ## 0.0.23 - 2018-04-07
 ### Modified by Calvin
 - controllers/Maintenance.php, fixed up submit function
