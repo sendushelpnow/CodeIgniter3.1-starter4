@@ -2,12 +2,12 @@
 
 class Equipment_set extends Entity {
 
-    protected $setId;
-    protected $name;
-    protected $headwear;
-    protected $armor;
-    protected $weapon;
-    protected $footwear;
+    public $setId;
+    public $name;
+    public $headwear;
+    public $armor;
+    public $weapon;
+    public $footwear;
 
     public function setSetId($value) {
         if (empty($value))
