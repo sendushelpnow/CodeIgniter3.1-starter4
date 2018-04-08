@@ -10,8 +10,12 @@ Group Members:
 [MATE #2] Jeremy Lee
 [MATE #3] Michaela Yoon
 
+## 0.0.25 - 2018-04-07
+### Modified by Alfred
+- added unit tests for all entity models
+- changed all model variables to public for unit tests
 
-## 0.0.23 - 2018-04-07
+## 0.0.24 - 2018-04-07
 ### Modified by Alfred
 - added phpunit testing framework to project
 - did some minor css fixes

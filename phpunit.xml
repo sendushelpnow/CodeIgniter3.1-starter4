@@ -10,8 +10,8 @@
         stopOnIncomplete="false"
         stopOnSkipped="false">
     <testsuites>
-        <testsuite name="My Test Suite">
-            <directory>./tests/application</directory>
+        <testsuite name="Model Tests">
+          <directory>./tests/application</directory>
         </testsuite>
     </testsuites>
 </phpunit>
