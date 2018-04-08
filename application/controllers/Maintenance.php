@@ -107,7 +107,7 @@ class Maintenance extends Application {
         // $range = 15;
         // $power = 15;
         // $protection = 15;
-        // $entry = $id . "," . $category . "," . $name . "," . $mobility . "," . $range . "," . $power . "," . $protection;
+        $entry = $id . "," . $category . "," . $name . "," . $mobility . "," . $range . "," . $power . "," . $protection;
         $file = fopen($csvPath, "a+");
         fputcsv($file, explode(",", $entry));
         fclose($file);
