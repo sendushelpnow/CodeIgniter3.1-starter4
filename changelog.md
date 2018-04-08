@@ -10,6 +10,11 @@ Group Members:
 [MATE #2] Jeremy Lee
 [MATE #3] Michaela Yoon
 
+## 0.0.23 - 2018-04-07
+### Modified by Calvin
+- controllers/Maintenance.php, fixed up submit function
+- assets/js/modify.js, fixed up javascript
+
 ## 0.0.22 - 2018-04-04
 ### Modified by Calvin
 - controllers/Maintenance.php, finished up submit functionality, small bug remains to be fixed
