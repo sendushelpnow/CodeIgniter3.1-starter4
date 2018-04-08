@@ -6,4 +6,4 @@ EquipmentID,Name,Category,Mobility,Range,Power,Protection
 4,Light Armor,Armor,20,0,0,20
 5,Mage Robe,Armor,30,0,10,0
 6,Mage Shoes,Boots,30,0,10,0
-7,Light Boots,Boots,20,0,0,5
+7,Light Boots,Boots,20,0,0,0
