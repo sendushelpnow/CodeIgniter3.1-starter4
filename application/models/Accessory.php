@@ -2,13 +2,13 @@
 
 class Accessory extends Entity {
 
-    protected $equipmentId;
-    protected $name;
-    protected $category;
-    protected $mobility;
-    protected $range;
-    protected $power;
-    protected $protection;
+    public $equipmentId;
+    public $name;
+    public $category;
+    public $mobility;
+    public $range;
+    public $power;
+    public $protection;
 
     public function setEquipmentId($value) {
         if (empty($value))

@@ -10,6 +10,31 @@ Group Members:
 [MATE #2] Jeremy Lee
 [MATE #3] Michaela Yoon
 
+## 0.0.27 - 2018-04-08
+### Added by Jeremy
+- assets/css/welcome.css: homepage equipment layout style.
+
+### Modified by Jeremy
+- controllers/Welcome.php: Added logic to get stat sums.
+- views/welcome.php: stats sum view.
+
+## 0.0.26 - 2018-04-08
+### Modified by Jeremy
+- controllers/Welcome.php: Added logic to get equipment sets
+- public/csv/Equipment_Sets.csv: changed names so that they match data from Accessries.csv
+- assets/js/welcome.js: equipment set function call.
+- views/welcome.php: equipped set view.
+
+## 0.0.25 - 2018-04-07
+### Modified by Alfred
+- added unit tests for all entity models
+- changed all model variables to public for unit tests
+
+## 0.0.24 - 2018-04-07
+### Modified by Alfred
+- added phpunit testing framework to project
+- did some minor css fixes
+
 ## 0.0.23 - 2018-04-07
 ### Modified by Calvin
 - controllers/Maintenance.php, fixed up submit function

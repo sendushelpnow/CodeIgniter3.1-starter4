@@ -2,8 +2,8 @@
 
 class Category extends Entity {
 
-    protected $categoryId;
-    protected $name;
+    public $categoryId;
+    public $name;
 
     public function setCategoryId($value) {
         if (empty($value))
