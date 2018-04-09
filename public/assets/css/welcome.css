@@ -1,0 +1,39 @@
+#man {
+    background-image: url(/assets/img/man.png);
+    height: 640px;
+    width: 480px;
+    background-size: contain;
+    background-repeat:no-repeat;
+}
+
+.item {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Row {
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 10px;
+}
+
+#headwear {
+    padding-top: 40px;
+    padding-right: 30px;
+}
+
+#armor {
+    padding-top: 100px;
+    padding-right: 200px;
+}
+
+#weapon {
+    padding-top: 50px;
+        padding-left: 150px;
+}
+
+#footwear {
+    padding-top: 150px;
+    padding-left: 50px;
+}

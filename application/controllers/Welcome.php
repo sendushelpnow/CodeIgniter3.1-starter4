@@ -11,10 +11,6 @@ class Welcome extends Application {
     var $sets = array();
     var $list_complete = array();
     var $list_id = array();
-    var $id_headwear;
-    var $id_armor;
-    var $id_weapon;
-    var $id_footwear;
 
     /**
      * Index Page for this controller.
@@ -81,6 +77,22 @@ class Welcome extends Application {
         $this->data['id_armor'] = $this->list_complete[$id]['Armor']['EquipmentID'];
         $this->data['id_weapon'] = $this->list_complete[$id]['Weapon']['EquipmentID'];
         $this->data['id_footwear'] = $this->list_complete[$id]['Footwear']['EquipmentID'];
-    }
 
+        $this->data['Mobility'] = ($this->list_complete[$id]['Headwear']['Mobility']
+                + $this->list_complete[$id]['Armor']['Mobility']
+                + $this->list_complete[$id]['Weapon']['Mobility']
+                + $this->list_complete[$id]['Footwear']['Mobility']);
+        $this->data['Range'] = ($this->list_complete[$id]['Headwear']['Range']
+                + $this->list_complete[$id]['Armor']['Range']
+                + $this->list_complete[$id]['Weapon']['Range']
+                + $this->list_complete[$id]['Footwear']['Range']);
+        $this->data['Power'] = ($this->list_complete[$id]['Headwear']['Power']
+                + $this->list_complete[$id]['Armor']['Power']
+                + $this->list_complete[$id]['Weapon']['Power']
+                + $this->list_complete[$id]['Footwear']['Power']);
+        $this->data['Protection'] = ($this->list_complete[$id]['Headwear']['Protection']
+                + $this->list_complete[$id]['Armor']['Protection']
+                + $this->list_complete[$id]['Weapon']['Protection']
+                + $this->list_complete[$id]['Footwear']['Protection']);
+    }
 }
