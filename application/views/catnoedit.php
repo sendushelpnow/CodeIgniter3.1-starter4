@@ -1,0 +1,9 @@
+<tr>
+    <td>{EquipmentID}</td>
+    <td>{Category}</td>
+    <td>{Name}</td>
+    <td>{Mobility}</td>
+    <td>{Range}</td>
+    <td>{Power}</td>
+    <td>{Protection}</td>
+</tr>

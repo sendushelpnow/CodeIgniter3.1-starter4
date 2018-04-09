@@ -10,6 +10,7 @@ class Accessories extends CI_Model {
 
     var $csvPath = "csv/Accessories.csv";
     var $data = array();
+    var $cat = array();
 
     // Constructor
     public function __construct() {
