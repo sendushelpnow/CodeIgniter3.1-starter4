@@ -24,10 +24,12 @@ class Welcome extends Application {
     }
 
     public function index() {
-//        echo "<script src=\"\public\assets\js\welcome.js\"></script>";
+        $this->sets = $this->equipment_sets->all();
 
-        $this->data['pagebody'] = 'welcome';
+        $this->show_page($this->sets[0]['Set Name']);
+    }
 
+    public function show_page($name) {
         // build the list of accessories, to pass on to our view
         $this->sets = $this->equipment_sets->all();
         $this->items = $this->accessories->all();
@@ -58,10 +60,11 @@ class Welcome extends Application {
 
         // pass on the data to present, as the "authors" view parameter
         $this->data['equipment_sets'] = $this->sets;
-        $this->data['debug'] = $this->list_complete[0]['Armor']['EquipmentID'];
 
-        $this->select_set('Warrior');
+        $this->select_set($name);
 
+        // and then pass them on
+        $this->data['pagebody'] = 'welcome';
         $this->render();
     }
 
@@ -78,7 +81,6 @@ class Welcome extends Application {
         $this->data['id_armor'] = $this->list_complete[$id]['Armor']['EquipmentID'];
         $this->data['id_weapon'] = $this->list_complete[$id]['Weapon']['EquipmentID'];
         $this->data['id_footwear'] = $this->list_complete[$id]['Footwear']['EquipmentID'];
-//        $this->render();
     }
 
 }

@@ -31,4 +31,5 @@
         </tr>
     </table>
 </div>
-<script  src="/assets/js/welcome.js" />
+
+<script src="/assets/js/welcome.js"></script>
