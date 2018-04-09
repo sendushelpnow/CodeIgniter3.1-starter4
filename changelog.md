@@ -10,6 +10,11 @@ Group Members:
 [MATE #2] Jeremy Lee
 [MATE #3] Michaela Yoon
 
+## 0.0.24 - 2018-04-08
+### Modified by Jeremy
+- controllers/Welcome.php: Added logic to get equipment sets
+- public/csv/Equipment_Sets.csv: changed names so that they match data from Accessries.csv
+
 ## 0.0.23 - 2018-04-07
 ### Modified by Calvin
 - controllers/Maintenance.php, fixed up submit function
